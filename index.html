@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RetroCars — Магазин ретро автомобилей</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">RetroCars</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cars">Коллекция</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="auth.html">Войти</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active text-center text-white bg-dark">
+                <img src="img/1.jpeg" class="d-block w-100 opacity-50" alt="Retro Car Hero">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="fw-bold">Настоящая классика на колёсах</h1>
+                    <p>Коллекция ретро автомобилей со всего мира</p>
+                    <a href="#cars" class="btn btn-light btn-lg">Посмотреть коллекцию</a>
+                </div>
+            </div>
+            <div class="carousel-item text-center text-white bg-dark">
+                <img src="img/2.jpeg" class="d-block w-100 opacity-50" alt="Retro Car 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="fw-bold">Ford Mustang 1968</h1>
+                    <p>Легенда американских дорог</p>
+                </div>
+            </div>
+            <div class="carousel-item text-center text-white bg-dark">
+                <img src="img/3.jpg" class="d-block w-100 opacity-50" alt="Retro Car 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="fw-bold">Chevrolet Camaro 1970</h1>
+                    <p>Мощь и стиль из прошлого</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- About -->
+    <section id="about" class="py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">О нас</h2>
+            <p class="text-muted lead">Мы собираем и восстанавливаем легендарные автомобили 50–80-х годов. Каждый
+                экземпляр — это история, стиль и характер.</p>
+        </div>
+    </section>
+
+    <!-- Cars -->
+    <section id="cars" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Наша коллекция</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="img/1.jpeg" class="card-img-top" alt="Ford Mustang 1968">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Ford Mustang 1968</h5>
+                            <p class="text-muted">$58,000</p>
+                            <a href="car-detail.html" class="btn btn-outline-dark">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="img/2.jpeg" class="card-img-top" alt="Chevrolet Camaro 1970">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Chevrolet Camaro 1970</h5>
+                            <p class="text-muted">$64,000</p>
+                            <a href="#" class="btn btn-outline-dark">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="img/3.jpg" class="card-img-top" alt="Porsche 911 1980">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Porsche 911 1980</h5>
+                            <p class="text-muted">$72,000</p>
+                            <a href="#" class="btn btn-outline-dark">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Связаться с нами</h2>
+            <p class="mb-4">Оставьте заявку, и мы подберем для вас идеальный ретро-автомобиль</p>
+            <button class="btn btn-dark btn-lg">Оставить заявку</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2025 RetroCars. Все права защищены.</p>
+            <div>
+                <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

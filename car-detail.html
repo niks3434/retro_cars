@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RetroCars — Подробности автомобиля</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">RetroCars</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html#about">О нас</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#cars">Коллекция</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <!-- Main Content -->
+    <main class="flex-grow-1">
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- Car Image -->
+            <div class="col-md-6">
+              <div class="card shadow-sm border-0">
+                <img src="img/1.jpeg" class="card-img-top" alt="Ford Mustang 1968">
+              </div>
+            </div>
+  
+            <!-- Car Info -->
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+              <h2 class="fw-bold mb-3">Ford Mustang 1968</h2>
+              <p class="text-muted mb-2"><strong>Год:</strong> 1968</p>
+              <p class="text-muted mb-3"><strong>Цена:</strong> $58,000</p>
+              <p class="mb-4">
+                Легендарный Ford Mustang 1968 года выпуска. Автомобиль в идеальном состоянии, полностью восстановлен с использованием оригинальных деталей.
+              </p>
+              <div class="d-grid gap-2">
+                <button class="btn btn-dark btn-lg">Купить</button>
+                <a href="index.html#cars" class="btn btn-outline-dark btn-lg">Назад к коллекции</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+      <div class="container text-center">
+        <p class="mb-0 small">&copy; 2025 RetroCars. Все права защищены.</p>
+      </div>
+    </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  
+</html>
